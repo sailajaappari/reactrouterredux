@@ -13,10 +13,10 @@ var users = [
 const UserListContainer = React.createClass({
   componentDidMount: function() {
     store.dispatch(getUsersSuccess(users));
-  }
+  },
   render: function() {
     return (
-      <UserList users={this.state.usersStore}>
+      <UserList users={userStore} />
     );
   }
 });

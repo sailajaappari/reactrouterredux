@@ -26,6 +26,7 @@ export const UserList = React.createClass({
     return (
       <li key={user.id}>
         <Link to="{user.id}">{user.name}</Link>
+      </li>
     );
   }
 });
